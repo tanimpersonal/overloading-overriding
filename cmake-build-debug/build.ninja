@@ -108,6 +108,40 @@ build overloading-overriding.exe: CXX_EXECUTABLE_LINKER__overloading-overriding_
   TARGET_IMPLIB = liboverloading-overriding.dll.a
   TARGET_PDB = overloading-overriding.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target override
+
+
+#############################################
+# Order-only phony target for override
+
+build cmake_object_order_depends_target_override: phony || CMakeFiles/override.dir
+
+build CMakeFiles/override.dir/override.cpp.obj: CXX_COMPILER__override_Debug D$:/Self$ Learning$ and$ Stuffs/CSE$ Funda/C++/overloading-overriding/override.cpp || cmake_object_order_depends_target_override
+  DEP_FILE = CMakeFiles\override.dir\override.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"D:/Self Learning and Stuffs/CSE Funda/C++/overloading-overriding/."
+  OBJECT_DIR = CMakeFiles\override.dir
+  OBJECT_FILE_DIR = CMakeFiles\override.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target override
+
+
+#############################################
+# Link the executable override.exe
+
+build override.exe: CXX_EXECUTABLE_LINKER__override_Debug CMakeFiles/override.dir/override.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\override.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = override.exe
+  TARGET_IMPLIB = liboverride.dll.a
+  TARGET_PDB = override.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -138,6 +172,8 @@ build overloading-overriding: phony overloading-overriding.exe
 
 build overloading_overriding: phony overloading_overriding.exe
 
+build override: phony override.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -146,7 +182,7 @@ build overloading_overriding: phony overloading_overriding.exe
 #############################################
 # Folder: D:/Self Learning and Stuffs/CSE Funda/C++/overloading-overriding/cmake-build-debug
 
-build all: phony overloading_overriding.exe overloading-overriding.exe
+build all: phony overloading_overriding.exe overloading-overriding.exe override.exe
 
 # =============================================================================
 # Built-in targets

@@ -9,3 +9,4 @@ add_executable(overloading_overriding
         overloading-overriding.cpp)
 
 add_executable(overloading-overriding overloading-overriding.cpp)
+add_executable(override override.cpp)

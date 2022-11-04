@@ -1,3 +1,9 @@
 # ninja log v5
-0	1597	6892818603630509	CMakeFiles/overloading_overriding.dir/overloading-overriding.cpp.obj	67ec4a4742d3735f
-1601	1786	6892818605475794	overloading_overriding.exe	fa3ada93355fa451
+4	1506	6892832076366779	CMakeFiles/overloading_overriding.dir/overloading-overriding.cpp.obj	67ec4a4742d3735f
+1506	1627	6892832077532181	overloading_overriding.exe	fa3ada93355fa451
+1	1700	6892985906213539	CMakeFiles/override.dir/override.cpp.obj	3b4f9def70be935a
+1701	1897	6892985908125973	override.exe	840f0aac676a0a54
+10	2273	6892986413455669	CMakeFiles/override.dir/override.cpp.obj	3b4f9def70be935a
+2273	2402	6892986414695270	override.exe	840f0aac676a0a54
+5	1527	6892986703638364	CMakeFiles/override.dir/override.cpp.obj	3b4f9def70be935a
+1527	1649	6892986704828278	override.exe	840f0aac676a0a54
